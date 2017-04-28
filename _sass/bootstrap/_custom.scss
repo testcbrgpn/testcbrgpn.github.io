@@ -1,0 +1,24 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$brand-primary:             #fdd835; /* Material design Yellow-600 */
+$body-bg:                   $gray-lighter;
+$jumbotron-bg:              $brand-primary;
+$jumbotron-padding:         1em;  /* Reduce the padding around the header. */
+
+$enable-rounded:            false; /* Make corners pointed rather than rounded. */
+$enable-shadows:            true;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500,500i,700,700i');
+$font-family-sans-serif:    Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+$font-family-monospace:     Roboto+Mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+$font-family-base:          $font-family-sans-serif;
+
+$font-weight-normal:        300; /* Make the regular font a bit thinner than normal. */
+$font-weight-base:          $font-weight-normal;
+
+$headings-margin-bottom:    ($spacer / 1.25);  /* Increase the margins below headings slightly. */
+$headings-font-family:      $font-family-monospace;

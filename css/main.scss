@@ -1,0 +1,83 @@
+---
+---
+
+/* Custom bootstrap variables are defined in _sass/bootstrap/_custom.scss */
+@import "bootstrap/bootstrap";
+
+/* Custom extensions to bootstrap */
+/* Colours selected using the material design's colour tool: https://material.io/color/ */
+$brand-primary-light:   #ffff6b; /* Material design Yellow-600 Light */
+$brand-primary-dark:    #c6a700; /* Material design Yellow-600 Dark */
+$brand-secondary:       #3949ab; /* Material design Indigo-600 */
+$brand-secondary-light: #6f74dd; /* Material design Indigo-600 Light */
+$brand-secondary-dark:  #00227b; /* Material design Indigo-600 Dark */
+
+@include bg-variant('.bg-primary-light', $brand-primary-light);
+@include bg-variant('.bg-primary-dark', $brand-primary-dark);
+@include bg-variant('.bg-secondary', $brand-secondary);
+@include bg-variant('.bg-secondary-light', $brand-secondary-light);
+@include bg-variant('.bg-secondary-dark', $brand-secondary-dark);
+
+/* Custom css */
+$header-color:     $black;
+$footer-color:     $gray;
+
+.thick-rule {
+  height: 1em;
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.shadow {
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  color: $header-color;
+  letter-spacing: .1em;
+}
+
+.padded, .footer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  color: $footer-color;
+}
+
+.vertical-centre {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.navbar-border {
+  border-left: .5em solid $brand-secondary-dark;
+}
+
+img {
+  max-width: 80%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.blink-caret {
+  border-right: .1em solid $brand-primary-dark;
+  animation:
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $brand-primary-dark; }
+}
