@@ -19,9 +19,6 @@ $brand-secondary-dark:  #00227b; /* Material design Indigo-600 Dark */
 @include bg-variant('.bg-secondary-dark', $brand-secondary-dark);
 
 /* Custom css */
-$header-color:     $black;
-$footer-color:     $gray;
-
 .thick-rule {
   height: 1em;
   width: 100%;
@@ -35,7 +32,6 @@ $footer-color:     $gray;
 }
 
 .header {
-  color: $header-color;
   letter-spacing: .1em;
 }
 
@@ -45,12 +41,7 @@ $footer-color:     $gray;
 }
 
 .footer {
-  color: $footer-color;
-}
-
-.vertical-centre {
-  margin-top: auto;
-  margin-bottom: auto;
+  color: $gray;
 }
 
 .no-border {
