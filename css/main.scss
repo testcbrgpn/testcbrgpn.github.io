@@ -52,6 +52,18 @@ $brand-secondary-dark:  #00227b; /* Material design Indigo-600 Dark */
   border-left: .5em solid $brand-secondary-dark;
 }
 
+.menu-item {
+  align-self:stretch;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.current-menu-item {
+  background: $brand-secondary-light;
+}
+
 img {
   max-width: 80%;
   display: block;

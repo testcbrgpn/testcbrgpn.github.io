@@ -7,6 +7,24 @@ github: http://github.com/canberragpn
 imgdir: /static/img
 logo: gpn-square-yellow.png
 
+menu-items:
+    - text: Home
+      url: /
+      icon: fa-home
+    - text: News
+      url: /news/
+      icon: fa-comments
+      layout: post
+    - text: Register
+      url: /register/
+      icon: fa-group
+    - text: Workshops
+      url: /workshops/
+      icon: fa-desktop
+    - text: Contact
+      url: /contact/
+      icon: fa-envelope
+
 sass:
   style: compressed
 
