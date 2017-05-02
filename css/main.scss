@@ -4,20 +4,6 @@
 /* Custom bootstrap variables are defined in _sass/bootstrap/_custom.scss */
 @import "bootstrap/bootstrap";
 
-/* Custom extensions to bootstrap */
-/* Colours selected using the material design's colour tool: https://material.io/color/ */
-$brand-primary-light:   #ffff6b; /* Material design Yellow-600 Light */
-$brand-primary-dark:    #c6a700; /* Material design Yellow-600 Dark */
-$brand-secondary:       #3949ab; /* Material design Indigo-600 */
-$brand-secondary-light: #6f74dd; /* Material design Indigo-600 Light */
-$brand-secondary-dark:  #00227b; /* Material design Indigo-600 Dark */
-
-@include bg-variant('.bg-primary-light', $brand-primary-light);
-@include bg-variant('.bg-primary-dark', $brand-primary-dark);
-@include bg-variant('.bg-secondary', $brand-secondary);
-@include bg-variant('.bg-secondary-light', $brand-secondary-light);
-@include bg-variant('.bg-secondary-dark', $brand-secondary-dark);
-
 /* Custom css */
 .thick-rule {
   height: 1em;

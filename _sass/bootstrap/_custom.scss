@@ -22,3 +22,20 @@ $font-weight-base:          $font-weight-normal;
 
 $headings-margin-bottom:    ($spacer / 1.25);  /* Increase the margins below headings slightly. */
 $headings-font-family:      $font-family-monospace;
+
+/* Following colours are not bootstrap variables */
+/* Colours selected using the material design's colour tool: https://material.io/color/ */
+$brand-primary-light:       #ffff6b; /* Material design Yellow-600 Light */
+$brand-primary-dark:        #c6a700; /* Material design Yellow-600 Dark */
+$brand-secondary:           #3949ab; /* Material design Indigo-600 */
+$brand-secondary-light:     #6f74dd; /* Material design Indigo-600 Light */
+$brand-secondary-dark:      #00227b; /* Material design Indigo-600 Dark */
+
+$link-color:                $brand-secondary; //red
+$link-hover-color:          $brand-secondary-dark; //green
+
+@include bg-variant('.bg-primary-light', $brand-primary-light);
+@include bg-variant('.bg-primary-dark', $brand-primary-dark);
+@include bg-variant('.bg-secondary', $brand-secondary);
+@include bg-variant('.bg-secondary-light', $brand-secondary-light);
+@include bg-variant('.bg-secondary-dark', $brand-secondary-dark);
