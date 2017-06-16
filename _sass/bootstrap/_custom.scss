@@ -9,7 +9,7 @@ $jumbotron-bg:              $brand-primary;
 $jumbotron-padding:         1em;  /* Reduce the padding around the header. */
 
 $enable-rounded:            false; /* Make corners pointed rather than rounded. */
-$enable-shadows:            true;
+$enable-shadows:            true; /* Not sure if this is actually doing anything. */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,500,500i,700,700i');
@@ -31,8 +31,8 @@ $brand-secondary:           #3949ab; /* Material design Indigo-600 */
 $brand-secondary-light:     #6f74dd; /* Material design Indigo-600 Light */
 $brand-secondary-dark:      #00227b; /* Material design Indigo-600 Dark */
 
-$link-color:                $brand-secondary; //red
-$link-hover-color:          $brand-secondary-dark; //green
+$link-color:                $brand-secondary;
+$link-hover-color:          $brand-secondary-dark;
 
 @include bg-variant('.bg-primary-light', $brand-primary-light);
 @include bg-variant('.bg-primary-dark', $brand-primary-dark);
