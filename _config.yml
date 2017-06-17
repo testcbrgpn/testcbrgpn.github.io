@@ -10,8 +10,8 @@ logo: gpn-square-yellow.png
 menu-items:
     - text: Home
       url: /
-    - text: News
-      url: /news/
+    - text: Events
+      url: /events/
       layout: post
     - text: Register
       url: /register/
