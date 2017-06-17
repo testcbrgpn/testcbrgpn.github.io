@@ -70,3 +70,13 @@ img {
   from, to { border-color: transparent }
   50% { border-color: $brand-primary-dark; }
 }
+
+.card-project {
+    height: 300px;
+    margin-top: 1.25rem;
+}
+
+.project-img {
+    height: 100px;
+}
+
