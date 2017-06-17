@@ -19,8 +19,6 @@ menu-items:
       url: /workshops/
     - text: Contact
       url: /contact/
-    - text: Stuff
-      url: /stuff/
 
 sass:
   style: compressed
