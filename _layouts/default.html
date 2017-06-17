@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    {% if page.title %}
+      <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+
     {% include meta_tags.html %}
   </head>
   <body>
