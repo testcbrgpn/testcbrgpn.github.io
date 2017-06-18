@@ -56,20 +56,11 @@ $( document ).ready(function() {
 	            url: url,
 	            dataType: "json",
 	            data: data,
-	            statusCode: {
-	                0: function() {
-	                        $('#subscribe-status').addClass('alert-danger');
-	                        $('#subscribe-status').html("<strong>Woops!</strong> Something went wrong!");
-	                        $("#subscribe-status").show();
-	                },
-	                200: function() {
-	                        console.log("success");
-	                        $('#subscribe-status').addClass('alert-success');
-	                        $('#subscribe-status').html("<strong>Thanks for signing up to our announcments!</strong>");
-	                        $("#subscribe-status").show();
-	                }
-	            }
-	    });
+	    }).always(function() {
+            $('#subscribe-status').addClass('alert-success');
+            $('#subscribe-status').html("<strong>Thanks for signing up to our announcments!</strong>");
+            $("#subscribe-status").show();
+		});
 	});
 });
 </script>
