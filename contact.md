@@ -39,28 +39,28 @@ nope
 
 <script>
 $( document ).ready(function() {
-	$('#subscribe-form-submit').click(function(e) {
-	    e.preventDefault();
-	    var contactFirstName = $('#subscribe-fname').val();
-	    var contactLastName  = $('#subscribe-lname').val();
-	    var contactEmailAddress = $('#subscribe-email').val();
-	    // data validation code here
-	    var url = "https://docs.google.com/forms/d/e/1FAIpQLSeyEVeUQ1NXcs5vkkG6hqBat6NbAMz1VFh6ASTPie-uNt3DgA/formResponse";
-	    var data = {
-	        'entry.915194881': contactFirstName,
-	        'entry.887862633': contactLastName,
-	        'entry.743158204': contactEmailAddress,
-	    };
-	    $.ajax({
-	            type: "POST",
-	            url: url,
-	            dataType: "json",
-	            data: data,
-	    }).always(function() {
+    $('#subscribe-form-submit').click(function(e) {
+        e.preventDefault();
+        var contactFirstName = $('#subscribe-fname').val();
+        var contactLastName  = $('#subscribe-lname').val();
+        var contactEmailAddress = $('#subscribe-email').val();
+        // data validation code here
+        var url = "https://docs.google.com/forms/d/e/1FAIpQLSeyEVeUQ1NXcs5vkkG6hqBat6NbAMz1VFh6ASTPie-uNt3DgA/formResponse";
+        var data = {
+            'entry.915194881': contactFirstName,
+            'entry.887862633': contactLastName,
+            'entry.743158204': contactEmailAddress,
+        };
+        $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                data: data,
+        }).always(function() {
             $('#subscribe-status').addClass('alert-success');
-            $('#subscribe-status').html("<strong>Thanks for signing up to our announcments!</strong>");
+            $('#subscribe-status').html("<strong>Thanks!</strong> You have been added to our GPN Announcements emailing list :)");
             $("#subscribe-status").show();
-		});
-	});
+        });
+    });
 });
 </script>
