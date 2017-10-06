@@ -6,7 +6,7 @@
 
 /* Custom css */
 .thick-rule {
-  height: 1em;
+  height: 0.5em;
   width: 100%;
   padding-bottom: 0;
   padding-top: 0;
@@ -23,6 +23,10 @@
 
 .padded, .footer {
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.bottom-padded {
   margin-bottom: 1em;
 }
 
@@ -51,7 +55,7 @@
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
   display: block;
   height: auto;
   margin-left: auto;
@@ -63,20 +67,10 @@ img {
 .blink-caret {
   border-right: .1em solid $brand-primary-dark;
   animation:
-    blink-caret 0.75s step-end infinite;
+    blink-caret 1.2s step-end infinite;
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $brand-primary-dark; }
+  40% { border-color: $brand-primary-dark; }
 }
-
-.card-project {
-    height: 300px;
-    margin-top: 1.25rem;
-}
-
-.project-img {
-    height: 100px;
-}
-

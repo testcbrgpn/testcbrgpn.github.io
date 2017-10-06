@@ -8,17 +8,23 @@ imgdir: /static/img
 logo: gpn-square-yellow.png
 
 menu-items:
-    - text: Home
-      url: /
-    - text: Events
-      url: /events/
-      layout: post
-    - text: Register
-      url: /register/
-    - text: Workshops
-      url: /workshops/
-    - text: Contact
-      url: /contact/
+- text: Home
+  url: /
+- text: News
+  url: /news/
+  layout: post
+- text: Register
+  url: /register/
+- text: Workshops
+  url: /workshops/
+- text: FAQ
+  url: /faq/
+- text: Contact
+  url: /contact/
+
+collections:
+  workshops:
+    output: true
 
 sass:
   style: compressed
@@ -26,5 +32,5 @@ sass:
 # Build settings
 markdown: kramdown
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock
