@@ -26,8 +26,8 @@ collections:
   workshops:
     output: true
 
-sass:
-  style: compressed
+# sass:
+  # style: compressed
 
 # Build settings
 markdown: kramdown

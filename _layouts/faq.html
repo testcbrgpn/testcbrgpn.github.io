@@ -15,7 +15,7 @@ layout: default
         </h5>
       </div>
       <div id="collapse{{ category.name | slugify }}{{ forloop.index }}" class="collapse" role="tabpanel" aria-labelledby="heading{{ category.name | slugify }}{{ forloop.index }}" data-parent="#faq">
-        <div class="card-block">
+        <div class="card-body">
           {{ question.answer }}
         </div>
       </div>
