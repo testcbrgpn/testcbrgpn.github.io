@@ -10,7 +10,7 @@
 
 $theme-colors: (
   primary:                  #fdd835,  // Material design Yellow-600
-  secondary:                #3949ab, // Material design Indigo-600
+  secondary:                #3949ab,  // Material design Indigo-600
   success: $green,
   info: $cyan,
   warning: $yellow,
@@ -22,7 +22,7 @@ $theme-colors: (
   primary-light:            #ffff6b, // Material design Yellow-600 Light
   primary-dark:             #c6a700, // Material design Yellow-600 Dark
   secondary-light:          #6f74dd, // Material design Indigo-600 Light
-  secondary-dark:           #00227b // Material design Indigo-600 Dark
+  secondary-dark:           #00227b  // Material design Indigo-600 Dark
 );
 
 $body-bg:                   $gray-200;
